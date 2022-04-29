@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --primary-color: #0e98e8;
+    --secondary-color: #c7af10;
+    --primary-neutral: #b1b9c4;
+    --secondary-neutral: #c4c2b1;
+    --warning-color: #d93434;
+    --info-color: #42d934;
+    --text-light: #ffffff;
+    --text-dark: #000000;
+}
+
+#main-navbar {
+    background-color: var(--primary-neutral);
+}
+
+.logo-container {
+    display: inline;
+}
+
+.navbar-ul {
+    display: inline;
+}
+
+.navbar-item {
+    display: inline-block;
+    padding: 2rem 1rem;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+.navbar-link:active {
+    color: var(--text-dark);
+}
+
+/* W3 Schools alert boxes. */
+/* The alert message box */
+
+#alert-div {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    padding: 1em 1em;
+}
+
+.alert {
+    padding: 20px;
+    color: var(--text-light);
+    background-color: var(--warning-color);
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: var(--text-light);
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: var(--text-dark);
+} 
