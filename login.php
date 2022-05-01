@@ -40,12 +40,25 @@
 
 ?>
 
-<form method='post' name='login' enctype='multipart/form-data'>
-    <input style='display: none;' type='text' id='website' name='website'>
-    <span><input type='text' name='username' id='username' maxlength='36' placeholder="Username" <?php if (isset($_POST['username'])) { echo "value='" . $_POST['username'] . "'"; } ?> ></input></span>
-    <span><input type='password' name='password' id='password' maxlength='36' placeholder="Password"></input></span>
-    <button id='submitLogin'>Login</button>
-</form>
+<div class="container main-content">
+    <form method='post' name='login' enctype='multipart/form-data'>
+        <div class="container">
+            <span class="nice-text">Login</span>
+        </div>
+        <div class="container">
+            <input style='display: none;' type='text' id='website' name='website'>
+        </div>
+        <div class="container">
+            <input type='text' name='username' id='username' maxlength='36' placeholder="Username" <?php if (isset($_POST['username'])) { echo "value='" . $_POST['username'] . "'"; } ?> ></input>
+        </div>
+        <div class="container">
+            <input type='password' name='password' id='password' maxlength='36' placeholder="Password"></input>
+        </div>
+        <div class="container">
+            <button class="button" id='submitLogin'>Login</button>
+        </div>
+    </form>
+</div>
 
 <?php
     require_once("footer.php");

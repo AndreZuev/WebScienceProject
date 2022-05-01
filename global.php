@@ -44,6 +44,14 @@
         return $ipAddress;
     }
 
+    function showInfo($text) {
+        ?>
+            <script>
+                showInfo(<?php echo '"' . $text . '"' ?>);
+            </script>
+        <?php
+    }
+
     function showWarning($text) {
         ?>
             <script>
